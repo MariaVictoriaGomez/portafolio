@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+body {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    background-color: #fff;
+    color: #000;
+}
+
+.boton{
+    background-color: #ffffff;
+    color:#2C2C2C;
+    border-radius: 10px;
+    border-style: none;
+    width: 3rem;
+}
+
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #2C2C2C !important;
+    color: #FFFFFF;
+}
+
+/* Modo oscuro para project-card */
+.dark-mode .project-card {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Modo claro */
+.light-mode {
+    background-color: #FFFFFF !important;
+    color: #000000;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hero {
+    background-color: #ffefd5;
+    color: #ff69b4;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Palanquin", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+.svg-arrow {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 3rem;
+    height: 3rem;
+    color: #ff69b4;
+    z-index: 2;
+    cursor: pointer;
+    transition: all .4s ease;
+    opacity: 1
+  }
+  
+  .svg-arrow:hover {
+    color: #fc9ecdf3
+  }
+  
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card video{
+    width: 100%;
+    height: auto;
+}
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    color: #ff69b4;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+   
+    width: 100%;
+    
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    #hero h1 {
+        font-size: 2.5em;
+    }
+    
+    #hero p {
+        font-size: 1.2em;
+    }
+}
