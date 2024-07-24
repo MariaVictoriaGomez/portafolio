@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Palanquin", sans-serif;
     font-weight: 100;
@@ -89,7 +95,7 @@ nav ul li a {
 .svg-arrow {
     position: fixed;
     bottom: 2%;
-    right: 3%;
+    right: 9%;
     width: 3rem;
     height: 3rem;
     color: #ff69b4;
