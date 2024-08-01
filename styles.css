@@ -4,9 +4,30 @@
     box-sizing: border-box;
 }
 
+/* agrego */
+html {
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ff69b4;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+/* fin */
+
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 100;
+   
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -30,6 +51,9 @@ body.dark-mode .project-card {
     background-color: #333;  /* Fondo oscuro */
     color: #fff;  /* Texto blanco */
 }
+
+
+
 #tsparticles {
     position: fixed;
     width: 100%;
@@ -58,6 +82,97 @@ body.dark-mode .project-card {
     color:#ff69b4;
 }
 
+/* fade in - fade out */
+
+section {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+section.show {
+    opacity: 1;
+    display: block;
+}
+
+/* fin */
+
+/* incorporo esto nuevo */
+.about-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-photo {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+  }
+  
+  .about-photo img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .about-description {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .about-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .about-links a {
+    text-decoration: none;
+  }
+  
+  .about-links svg {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .linkedin-icon {
+    fill: #ff69b4;
+    transition: fill 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    fill: #663473;
+}
+  .about-links button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .about-links button:hover {
+    background-color: #663473;
+  }
+/* fin   */
 
 #scrollToTop {
     position: fixed;
@@ -101,13 +216,15 @@ body.dark-mode .project-card {
 }
 
 #hero p {
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 #about {
     padding: 60px 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
     background: #fff;
     border: 2px solid #ff69b4;
     border-radius: 15px;
@@ -130,9 +247,9 @@ body.dark-mode .project-card {
 }
 
 #about p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
 }
 
 body.dark-mode #about {
@@ -140,6 +257,9 @@ body.dark-mode #about {
     border-color: #ff69b4;
 }
 
+body.dark-mode #projects h3 {
+    color: #eb9eff;
+}
 
 section {
     padding: 40px 20px;
@@ -147,10 +267,27 @@ section {
     margin: 0 auto;
 }
 
+#projects h2{
+    font-size: 3em;
+    color:#ff69b4;
+}
+
+#projects h3{
+    font-size: 2em;
+   color: #663473;
+   
+}
+
+#projects h4{
+    font-size: 1em;
+    color:#ff69b4;
+}
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    margin-bottom: 60px;
+    margin-top: 10px;
 }
 
 .project-card {

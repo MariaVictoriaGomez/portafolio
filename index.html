@@ -8,22 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- agrego -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+        </ul>
+        
+        <!-- fin -->
     <div id="tsparticles"></div>
     <button id="theme-toggle" aria-label="Toggle theme">
         <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.75C17.5858 2.75 17.25 2.41421 17.25 2C17.25 1.58579 17.5858 1.25 18 1.25H22C22.3034 1.25 22.5768 1.43273 22.6929 1.71299C22.809 1.99324 22.7449 2.31583 22.5304 2.53033L19.8107 5.25H22C22.4142 5.25 22.75 5.58579 22.75 6C22.75 6.41421 22.4142 6.75 22 6.75H18C17.6967 6.75 17.4232 6.56727 17.3071 6.28701C17.191 6.00676 17.2552 5.68417 17.4697 5.46967L20.1894 2.75H18ZM13.5 8.75C13.0858 8.75 12.75 8.41421 12.75 8C12.75 7.58579 13.0858 7.25 13.5 7.25H16.5C16.8034 7.25 17.0768 7.43273 17.1929 7.71299C17.309 7.99324 17.2449 8.31583 17.0304 8.53033L15.3107 10.25H16.5C16.9142 10.25 17.25 10.5858 17.25 11C17.25 11.4142 16.9142 11.75 16.5 11.75H13.5C13.1967 11.75 12.9232 11.5673 12.8071 11.287C12.691 11.0068 12.7552 10.6842 12.9697 10.4697L14.6894 8.75H13.5Z" fill="#ff69b4"/>
-            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#ff69b4"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 2.75C17.5858 2.75 17.25 2.41421 17.25 2C17.25 1.58579 17.5858 1.25 18 1.25H22C22.3034 1.25 22.5768 1.43273 22.6929 1.71299C22.809 1.99324 22.7449 2.31583 22.5304 2.53033L19.8107 5.25H22C22.4142 5.25 22.75 5.58579 22.75 6C22.75 6.41421 22.4142 6.75 22 6.75H18C17.6967 6.75 17.4232 6.56727 17.3071 6.28701C17.191 6.00676 17.2552 5.68417 17.4697 5.46967L20.1894 2.75H18ZM13.5 8.75C13.0858 8.75 12.75 8.41421 12.75 8C12.75 7.58579 13.0858 7.25 13.5 7.25H16.5C16.8034 7.25 17.0768 7.43273 17.1929 7.71299C17.309 7.99324 17.2449 8.31583 17.0304 8.53033L15.3107 10.25H16.5C16.9142 10.25 17.25 10.5858 17.25 11C17.25 11.4142 16.9142 11.75 16.5 11.75H13.5C13.1967 11.75 12.9232 11.5673 12.8071 11.287C12.691 11.0068 12.7552 10.6842 12.9697 10.4697L14.6894 8.75H13.5Z" fill="#fff"/>
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 11.5373 21.3065 11.4608 21.0672 11.8568C19.9289 13.7406 17.8615 15 15.5 15C11.9101 15 9 12.0899 9 8.5C9 6.13845 10.2594 4.07105 12.1432 2.93276C12.5392 2.69347 12.4627 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#fff"/>
             </svg>
     </button>
     <section id="hero">
         <h1>Hola, soy Vicky!</h1>
-        <p>Licenciada en Ciencias de la Comunicación con orientación hacia la gráfica. También soy desarrolladora frontend. Me apasiona la edición de imágenes, videos y sonidos, así como la creación de piezas gráficas, la redacción y la fotografía. Mi trabajo combina creatividad y técnica para producir contenido visualmente atractivo y efectivo.</p>
+        <p>Licenciada en Ciencias de la Comunicación con orientación hacia la gráfica. También soy desarrolladora frontend. Me apasiona la edición de imágenes, videos,sonidos, y la creación de piezas gráficas, la redacción y la fotografía. Mi trabajo combina creatividad y técnica para producir contenido visualmente atractivo y efectivo.</p>
     </section>
-
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Tengo 35 años y soy mamá de una niña de 4. Soy una persona creativa, curiosa, proactiva y algunas veces autodidacta. Acá te muestro un pedacito de mí y de algunos trabajos que realicé en estos años.</p>
-    </section>
+<!-- incorporo esto nuevo -->
+<section id="about" class="about-section">
+    <div class="container">
+      <h2>Sobre mí</h2>
+      <div class="about-content">
+        <div class="about-photo">
+          <img src="./asset/foto.jpg" alt="Foto de Vicky">
+        </div>
+        <div class="about-description">
+          <p> Me llamo María Victoria Gómez, pero me dicen Vicky. 
+            <br>Tengo 35 años y soy mamá de una niña de 4. Soy una persona creativa, curiosa, proactiva y algunas veces autodidacta. Actualmente, estoy buscando nuevas oportunidades para aplicar mis habilidades en proyectos desafiantes. Acá te muestro un pedacito de mí y de algunos trabajos que realicé en estos años. </p><br>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/lic-mar%C3%ADa-victoria-g%C3%B3mez/" target="_blank">
+                <svg  class="linkedin-icon" fill="#ff69b4" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="-143 145 512 512" xml:space="preserve">
+           <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z
+                M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7
+               c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4
+               c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6
+               c35.5,0,63.3,23,63.3,72.4V508.1z"/>
+           </svg>
+            </a>
+            <a href="ruta/a/tu/cv.pdf" download>
+              <button>Descargar CV</button>
+            </a>
+            <a href="https://wa.me/tu-numero-de-telefono" target="_blank">
+              <button>WhatsApp</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 
     <section id="projects">
@@ -37,7 +75,7 @@
                     Tu navegador no soporta el elemento de video.
                 </video>
                 <div class="project-content">
-                    <h3>Video Publicitario para Redes Sociales</h3>
+                    <h4>Video Publicitario para Redes Sociales</h4>
                     <p>Desarrollé una serie de videos promocionales para el programa de radio feminista "Insurrectas".El objetivo fué atraer y captar la atención de una audiencia interesada en temas feministas, promoviendo el programa "Insurrectas" y aumentando su visibilidad en redes sociales. </p>
                 </div>
             </div>
@@ -47,7 +85,7 @@
                     Tu navegador no soporta el elemento de video.
                 </video>
                 <div class="project-content">
-                    <h3>Video Publicitario para Redes Sociales</h3>
+                    <h4>Video Publicitario para Redes Sociales</h4>
                     <p>Los videos tienen una duración entre 20 y 58 segundos y estan diseñados específicamente para su difusión en redes sociales. Utilicé software de edición profesional para ensamblar clips, agregar efectos visuales y sincronizar el audio. </p>
                 </div>
             </div>
@@ -57,7 +95,7 @@
                     Tu navegador no soporta el elemento de video.
                 </video>
                 <div class="project-content">
-                    <h3>Video Publicitario para Redes Sociales</h3>
+                    <h4>Video Publicitario para Redes Sociales</h4>
                     <p>Incorporé elementos gráficos coherentes con la identidad del programa.Aseguré que los videos cumplieran con las especificaciones técnicas y de contenido para maximizar su impacto en plataformas sociales.</p>
                 </div>
               
@@ -71,7 +109,7 @@
                     Tu navegador no soporta el elemento de video.
                 </video>
                 <div class="project-content ">
-                    <h3>Spot Publicitario para ANODAL </h3>
+                    <h4>Spot Publicitario para ANODAL </h4>
                     <p>Este video publicitario fue producido para la empresa ANODAL y se presentó en su stand durante la ExpoCasa, un evento de gran relevancia en el sector de la construcción y el diseño de interiores. Posteriormente, el video también se utilizó como pieza publicitaria en diversas plataformas.
                         El principal objetivo del video es destacar las fortalezas y ventajas competitivas de la empresa en el mercado. Se enfoca en resaltar la calidad de sus productos, la innovación en sus diseños, y el compromiso con la satisfacción del cliente. Trabajar en este proyecto fue una experiencia enriquecedora que me permitió aplicar y expandir mis habilidades en producción audiovisual y marketing. La oportunidad de colaborar con un equipo talentoso y de ver el impacto positivo del video en la percepción de la marca en un evento tan importante como ExpoCasa fue particularmente gratificante. </p>
                 </div>
@@ -84,21 +122,21 @@
             <div class="project-card">
                 <img src="./asset/punto de partida.png" alt="imagen-diseño">
                 <div class="project-content">
-                    <h3>Punto de partida</h3>
+                    <h4>Punto de partida</h4>
                     <p>En esta pieza publicitaria creé una imagen publicitaria para una pequeña empresa, con el objetivo de proporcionar información esencial para nuevos emprendedores. La pieza titulada "Punto de Partida" está diseñada para inspirar y guiar a aquellos que desean iniciar su propio negocio. Utilicé una combinación de elementos visuales creativos y una paleta de colores cálidos para crear una atmósfera acogedora y motivadora, alineada con la misión de la empresa de apoyar a los emprendedores en sus primeros pasos.</p>
                 </div>
             </div>
             <div class="project-card">
                 <img src="./asset/2.png" alt="imagen-diseño-2">
                 <div class="project-content">
-                    <h3>Solicitud de Créditos a Tasa Cero</h3>
+                    <h4>Solicitud de Créditos a Tasa Cero</h4>
                     <p>En este caso diseñé una guía visual paso a paso con el fin de instruir a los clientes sobre cómo solicitar créditos a tasa cero. La imagen detalla el proceso de solicitud, los requisitos necesarios y proporciona tips útiles para facilitar la comprensión. Utilicé un diseño limpio y organizado, complementado con una estética profesional y amigable, alineada con la identidad de la empresa. El objetivo fue comunicar información compleja de manera clara y efectiva a través de elementos visuales atractivos.</p>
                 </div>
             </div>
             <div class="project-card">
                 <img src="./asset/tasa cero.png" alt="imagen-diseño-3">
                 <div class="project-content">
-                    <h3>Tasa Cero</h3>
+                    <h4>Tasa Cero</h4>
                     <p>En este proyecto, diseñé una pieza publicitaria que transmite un ambiente fresco y profesional, alineado con la identidad visual de la empresa. Utilicé una paleta de colores suaves y elementos minimalistas para resaltar la oferta de créditos sin intereses, destacando la accesibilidad y el beneficio financiero para los clientes potenciales.</p>
                 </div>
             </div>
@@ -111,7 +149,7 @@
             <div class="project-card">
                 <img src="./asset/SUELDOS.jpg" alt="imagen-diseño">
                 <div class="project-content">
-                    <h3>Liquidación de sueldos </h3>
+                    <h4>Liquidación de sueldos </h4>
                     <p>Este diseño presenta una estética vibrante y moderna, con un fondo amarillo intenso que capta de inmediato la atención.
                         El título principal, "LIQUIDACIÓN DE SUELDOS Y CARGAS SOCIALES DEL PERSONAL", domina la composición en una tipografía grande y destacada. Debajo, el subtítulo "Incluye ART, Obras Sociales y Sindicatos" complementa la información, detallando los aspectos cubiertos por este servicio.                        
                         La ilustración central muestra dos personajes caricaturescos representando de manera simbólica el proceso de liquidación. Uno sostiene una bolsa de dinero, mientras el otro celebra con los brazos en alto, transmitiendo un mensaje positivo y de eficiencia.                        
@@ -121,7 +159,7 @@
             <div class="project-card">
                 <img src="./asset/LIQUIDACION3.jpg" alt="imagen-diseño-2">
                 <div class="project-content">
-                    <h3>Liquidación de ganancias y Bs. personales</h3>
+                    <h4>Liquidación de ganancias y Bs. personales</h4>
                     <p>La paleta de colores, con el predominio del azul y amarillo, crea un contraste vibrante y llamativo que capta la atención.
                         La distribución de los elementos, con el título principal en la parte superior y la información complementaria debajo, sigue una jerarquía visual clara y ordenada.
                         En general, el diseño minimalista y la tipografía moderna transmiten un mensaje conciso, profesional y de fácil lectura.</p>
@@ -130,7 +168,7 @@
             <div class="project-card">
                 <img src="./asset/mono.jpg" alt="imagen-diseño-3">
                 <div class="project-content">
-                    <h3>Monotributo</h3>
+                    <h4>Monotributo</h4>
                     <p>El flyer tiene un diseño efectivo y coherente con la imagen de marca que se quiere transmitir. Transmite profesionalidad, eficiencia y una propuesta de valor clara.El uso del azul eléctrico y el amarillo intenso crea un contraste dinámico y llamativo, que capta de inmediato la atención del espectador.La tipografía principal, "MONOTRIBUTO", utiliza letras grandes y boldadas que dominan la composición. El estilo moderno y geométrico de la fuente transmite profesionalidad y solidez. Los iconos de smartphones y gráficos representan de manera simple y visual los diferentes servicios ofrecidos, guiando al usuario de forma intuitiva.La distribución de los elementos crea una jerarquía visual clara. El título principal ocupa la posición superior, mientras que los servicios se presentan de manera organizada y equilibrada. El diseño limpio, sin elementos decorativos innecesarios, enfatiza la información clave y facilita su lectura y comprensión. Esto refleja un enfoque moderno y orientado a la usabilidad.</p>
                 </div>
             </div>
@@ -144,7 +182,7 @@
             <div class="project-card">
                 <img src="./asset/tapa de septiembre 2023.png" alt="imagen-diseño-3">
                 <div class="project-content">
-                    <h3>Gráfica tapa de libro</h3>
+                    <h4>Gráfica tapa de libro</h4>
                     <p>Para esta tapa, me inspiré en la idea de representar la diversidad y la unidad del continente americano en el ámbito educativo. Utilicé un mapa del continente en acuarela, donde los colores azul y rojo simbolizan las distintas regiones y su conexión a través de la educación. La tipografía es moderna y legible, destacando el título del libro con un diseño limpio y profesional. En la parte inferior derecha, se encuentra una ilustración que representa una comunidad escolar, enfatizando la importancia de la inclusión y la colaboración en la educación.</p>
                 </div>
             </div>
@@ -154,7 +192,7 @@
             <div class="project-card">
                 <img src="./asset/tapa final habia una vez .png" alt="imagen-diseño-3">
                 <div class="project-content">
-                    <h3>Gráfica tapa de libro</h3>
+                    <h4>Gráfica tapa de libro</h4>
                     <p>En esta tapa, quise capturar la esencia mágica y nostálgica de los cuentos. Utilicé un fondo estrellado que evoca la inmensidad del cielo nocturno y el misterio de las historias que se cuentan bajo las estrellas. La tipografía en blanco resalta sobre el fondo oscuro, mientras que el nombre del autor en amarillo añade un toque de calidez. La ilustración de un paisaje montañoso en la parte inferior complementa la atmósfera de fantasía, transportando al lector a un mundo de imaginación y sueños.</p>
                 </div>
             </div>
@@ -166,7 +204,7 @@
             <div class="project-card">
                 <img src="./asset/librito con t y ct y s y l.png" alt="imagen-diseño">
                 <div class="project-content">
-                    <h3>Solapas, tapa y contratapa</h3>
+                    <h4>Solapas, tapa y contratapa</h4>
                     <p></p>
                 </div>
             </div>
@@ -174,7 +212,7 @@
                   <div class="project-card">
                 <img src="./asset/tapa contratapa solapas habia una vez .png" alt="imagen-diseño-2">
                 <div class="project-content">
-                    <h3>Solapas, tapa y contratapa</h3>
+                    <h4>Solapas, tapa y contratapa</h4>
                     <p></p>
                 </div>
             </div>
