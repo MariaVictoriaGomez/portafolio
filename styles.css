@@ -9,6 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 nav ul {
     list-style: none;
     display: flex;
@@ -76,6 +78,7 @@ body.dark-mode #migrarte{
     z-index: 1000;
     width: 40px;
     height: 40px;
+    
 }
 
 #theme-toggle svg {
@@ -426,7 +429,7 @@ body.dark-mode #skills h3{
     #theme-toggle svg {
        
         width: 60%;
-        height: 350%;
+      
            
     }
     nav ul {
