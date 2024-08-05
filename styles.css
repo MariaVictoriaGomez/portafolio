@@ -52,6 +52,9 @@ body.dark-mode .project-card {
     color: #fff;  /* Texto blanco */
 }
 
+body.dark-mode #migrarte{
+    color: #fff;
+}
 
 
 #tsparticles {
@@ -259,6 +262,10 @@ body.dark-mode #about {
 
 body.dark-mode #projects h3 {
     color: #eb9eff;
+}
+
+#migrarte{
+    color:#000;
 }
 
 section {
